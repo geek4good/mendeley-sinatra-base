@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"
+    javascript:
+      $(function() {
+        var fragment = document.location.hash;
+        var token_index = fragment.indexOf('=') + 1;
+        var access_token = fragment.substring(token_index);
+        $.post('/auth/token',
+              {access_token: access_token},
+              function() { window.location.replace('#{return_to}')});
+      });
