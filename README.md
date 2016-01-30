@@ -25,4 +25,4 @@ res.body
 
 ## Troubleshooting
 
-Should you at some point encounter an error message that says you're token has expired, just open the web development console in your browser, go to *Resources* and delete the cookie called *rack.session* from *localhost*. The cleaner solution would be to implement the refresh token flow, of course. So please feel free to do that instead and open a pull request against the upstream repository. ;)
+Should you at some point encounter an error message that says your token has expired, just open the web development console in your browser, go to *Resources* and delete the cookie called *rack.session* from *localhost*. The cleaner solution would be to implement the refresh token flow, of course. So please feel free to do that instead and open a pull request against the upstream repository. ;)
